@@ -11,4 +11,10 @@ public class Main {
 		System.out.println("--------------------");
 		c = new WalmartCrawler("asd;flkj");
 	}
+	
+	public static void runTests() {
+		String bananas = "Bananas";
+		String iceCream = "Ice Cream";
+		String jibberish = "asdfjkl;";
+	}
 }
