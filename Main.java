@@ -11,4 +11,9 @@ public class Main {
 		System.out.println("--------------------");
 		c = new WalmartCrawler("asd;flkj");
 	}
+	
+	public static void runTests() {
+		String apple = "apple";
+		String jibberish = "a;elir;ldsfkj";
+	}
 }
