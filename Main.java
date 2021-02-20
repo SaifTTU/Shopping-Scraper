@@ -13,7 +13,8 @@ public class Main {
 	}
 	
 	public static void runTests() {
-		String apple = "apple";
-		String jibberish = "a;elir;ldsfkj";
+		String bananas = "Bananas";
+		String iceCream = "Ice Cream";
+		String jibberish = "asdfjkl;";
 	}
 }
