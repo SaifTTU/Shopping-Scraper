@@ -1,6 +1,5 @@
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
-import org.jsoup.Jsoup;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -31,10 +30,6 @@ public class MarketStreet extends WebScraper {
     	this.cookies.put("COOKIE_CURRENT_PAGE","%2f");
     	this.cookies.put("COOKIE_SHOP_PATH","Online");
     }
-    
-//    private Elements grabPage(String url) throws IOException {
-//        return Jsoup.connect(url).cookies(this.cookies).get().getElementsByTag(TAG_TYPE);
-//    }
     
     private float getItemPrice(Elements el) {
         boolean found = false;
