@@ -3,14 +3,18 @@ import org.jsoup.select.Elements;
 import org.jsoup.Jsoup;
 
 import java.io.IOException;
+import java.util.HashMap;
 
 public class MarketStreet {
 
     private final String TAG_TYPE = "strong";
+    private final HashMap cookies;
     
     private float itemPrice;
     
     public MarketStreet(String item) {
+    	this.cookies = new HashMap<String, String>();
+    	addCookies();
         try {
             this.itemPrice = getItemPrice(grabPage("https://www.marketstreetunited.com/rs/SearchProduct?searchkey="+item+"&typeSearch=SearchProducts"));
         } catch (IOException e) {
@@ -20,8 +24,15 @@ public class MarketStreet {
         System.out.println("The price of "+item+" was $" + this.itemPrice);
     }
     
+    private void addCookies() {
+    	this.cookies.put("COOKIE_CURRENT_STORE","8");
+    	this.cookies.put("_pk_id.4.8c4a","b52bfe4ebeccec2d.1612664136.");
+    	this.cookies.put("COOKIE_CURRENT_PAGE","%2f");
+    	this.cookies.put("COOKIE_SHOP_PATH","Online");
+    }
+    
     private Elements grabPage(String url) throws IOException {
-        return Jsoup.connect(url).cookie("COOKIE_CURRENT_STORE","8").cookie("_pk_id.4.8c4a","b52bfe4ebeccec2d.1612664136.").cookie("COOKIE_CURRENT_PAGE","%2f").cookie("COOKIE_SHOP_PATH","Online").get().getElementsByTag(TAG_TYPE);
+        return Jsoup.connect(url).cookies(this.cookies).get().getElementsByTag(TAG_TYPE);
     }
     
     private float getItemPrice(Elements el) {
