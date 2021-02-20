@@ -3,7 +3,6 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.io.IOException;
-import java.util.ArrayList;
 
 public class Walmart extends WebScraper {
 
