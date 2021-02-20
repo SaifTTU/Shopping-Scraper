@@ -14,12 +14,12 @@ public class Walmart extends WebScraper {
 	
 	public Walmart(String url) {
 		try {
-			itemPrice = getItemPrice(grabPage(url, TAG_TYPE));
+			this.itemPrice = getItemPrice(grabPage(url, TAG_TYPE));
 		} catch (IOException e) {
-			itemPrice = Float.MAX_VALUE;
+			this.itemPrice = Float.MAX_VALUE;
 			System.out.println("Error getting the value.");
 		}
-		System.out.println("The price of the item was $" + itemPrice);
+		System.out.println("The price of the item was $" + this.itemPrice);
 	}
 	
 	private float getItemPrice(Elements el) {

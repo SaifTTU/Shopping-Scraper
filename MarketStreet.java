@@ -6,7 +6,7 @@ import org.jsoup.Jsoup;
 import java.io.IOException;
 import java.util.ArrayList;
 
-class MarketStreet {
+public class MarketStreet {
 
     private final String TAG_TYPE = "strong";
     
@@ -14,12 +14,12 @@ class MarketStreet {
     
     public MarketStreet(String item) {
         try {
-            itemPrice = getItemPrice(grabPage("https://www.marketstreetunited.com/rs/SearchProduct?searchkey="+item+"&typeSearch=SearchProducts"));
+            this.itemPrice = getItemPrice(grabPage("https://www.marketstreetunited.com/rs/SearchProduct?searchkey="+item+"&typeSearch=SearchProducts"));
         } catch (IOException e) {
-            itemPrice = Float.MAX_VALUE;
+            this.itemPrice = Float.MAX_VALUE;
             System.out.println("Error getting the value.");
         }
-        System.out.println("The price of "+item+" was $" + itemPrice);
+        System.out.println("The price of "+item+" was $" + this.itemPrice);
     }
     private ArrayList<String> searchItem(String item) {
         return new ArrayList<String>();
