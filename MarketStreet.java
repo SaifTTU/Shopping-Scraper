@@ -21,7 +21,6 @@ public class MarketStreet {
     }
     
     private Elements grabPage(String url) throws IOException {
-    
         return Jsoup.connect(url).cookie("COOKIE_CURRENT_STORE","8").cookie("_pk_id.4.8c4a","b52bfe4ebeccec2d.1612664136.").cookie("COOKIE_CURRENT_PAGE","%2f").cookie("COOKIE_SHOP_PATH","Online").get().getElementsByTag(TAG_TYPE);
     }
     
