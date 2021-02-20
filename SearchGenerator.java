@@ -23,7 +23,7 @@ public class SearchGenerator {
 		private static final String PREFIX = "https://www.marketstreetunited.com/rs/SearchProduct?searchkey=";
 		private static final String SUFFIX = "&typeSearch=SearchProducts";
 		
-		public String getURL(String item) {
+		public static String getURL(String item) {
 			return PREFIX+item+SUFFIX;
 		}
 	}
