@@ -5,7 +5,7 @@ import org.jsoup.Jsoup;
 import java.io.IOException;
 import java.util.HashMap;
 
-public class MarketStreet {
+public class MarketStreet extends WebScraper {
 
     private final String TAG_TYPE = "strong";
     private final HashMap cookies;
@@ -16,7 +16,8 @@ public class MarketStreet {
     	this.cookies = new HashMap<String, String>();
     	addCookies();
         try {
-            this.itemPrice = getItemPrice(grabPage("https://www.marketstreetunited.com/rs/SearchProduct?searchkey="+item+"&typeSearch=SearchProducts"));
+        	String url = SearchGenerator.MarketStreetSearch.getURL(item);
+            this.itemPrice = getItemPrice(grabPage(url, TAG_TYPE, this.cookies));
         } catch (IOException e) {
             this.itemPrice = Float.MAX_VALUE;
             System.out.println("Error getting the value.");
@@ -31,9 +32,9 @@ public class MarketStreet {
     	this.cookies.put("COOKIE_SHOP_PATH","Online");
     }
     
-    private Elements grabPage(String url) throws IOException {
-        return Jsoup.connect(url).cookies(this.cookies).get().getElementsByTag(TAG_TYPE);
-    }
+//    private Elements grabPage(String url) throws IOException {
+//        return Jsoup.connect(url).cookies(this.cookies).get().getElementsByTag(TAG_TYPE);
+//    }
     
     private float getItemPrice(Elements el) {
         boolean found = false;
