@@ -32,15 +32,11 @@ public class MarketStreet extends WebScraper {
     }
     
     private float getItemPrice(Elements el) {
-        boolean found = false;
         for(Element e : el) {
             String element = e.text();
             if(element.contains("$")) { //it checks for the first element with $ in it and records only that price
-                if(found==false) {
-                    found=true;
-                    float price = grabPrice(element);
-                    return price;
-                }
+            	float price = grabPrice(element);
+            	return price;
             }
         } 
         return 0;
