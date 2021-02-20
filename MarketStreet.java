@@ -1,10 +1,8 @@
 import org.jsoup.nodes.Element;
-import org.jsoup.nodes.Attributes;
 import org.jsoup.select.Elements;
 import org.jsoup.Jsoup;
 
 import java.io.IOException;
-import java.util.ArrayList;
 
 public class MarketStreet {
 
@@ -20,9 +18,6 @@ public class MarketStreet {
             System.out.println("Error getting the value.");
         }
         System.out.println("The price of "+item+" was $" + this.itemPrice);
-    }
-    private ArrayList<String> searchItem(String item) {
-        return new ArrayList<String>();
     }
     
     private Elements grabPage(String url) throws IOException {
@@ -43,11 +38,6 @@ public class MarketStreet {
             }
         } 
         return 0;
-    }
-    
-    private String getRawPrice(Element e) {
-        Attributes a = e.attributes();
-        return a.get("content");
     }
     
     private float grabPrice(String element){ //removes the dollar sign and letters from an element
