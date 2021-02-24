@@ -23,8 +23,7 @@ public class QuickScrape {
     }
     
     protected String getRawElement(Element e, String attr) {
-        Attributes a = e.attributes();
-        return a.get(attr);
+    	return e.text().replace("$","");
     }
     
 }

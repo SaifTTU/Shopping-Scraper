@@ -2,7 +2,6 @@
 
 import java.io.IOException;
 
-import org.jsoup.Jsoup;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
@@ -40,7 +39,7 @@ public class Target extends QuickScrape {
                     float price = Float.parseFloat(getRawElement(e, "product-price"));
                     return price;
                 } catch (Exception ex) {
-                    
+                	System.out.println(ex);
                 }
             }
         }
