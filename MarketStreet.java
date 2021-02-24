@@ -1,52 +1,45 @@
 import org.jsoup.nodes.Element;
-import org.jsoup.nodes.Attributes;
 import org.jsoup.select.Elements;
 
 import java.io.IOException;
-import java.util.ArrayList;
+import java.util.HashMap;
 
-class MarketStreet {
+public class MarketStreet extends WebScraper {
 
     private final String TAG_TYPE = "strong";
+    private final HashMap cookies;
     
     private float itemPrice;
     
     public MarketStreet(String item) {
+    	this.cookies = new HashMap<String, String>();
+    	addCookies();
         try {
-            itemPrice = getItemPrice(grabPage("https://www.marketstreetunited.com/rs/SearchProduct?searchkey="+item+"&typeSearch=SearchProducts"));
+        	String url = SearchGenerator.MarketStreetSearch.getURL(item);
+            this.itemPrice = getItemPrice(grabPage(url, TAG_TYPE, this.cookies));
         } catch (IOException e) {
-            itemPrice = Float.MAX_VALUE;
+            this.itemPrice = Float.MAX_VALUE;
             System.out.println("Error getting the value.");
         }
-        System.out.println("The price of "+item+" was $" + itemPrice);
-    }
-    private ArrayList<String> searchItem(String item) {
-        return new ArrayList<String>();
+        System.out.println("The price of "+item+" was $" + this.itemPrice);
     }
     
-    private Elements grabPage(String url) throws IOException {
-    
-        return Jsoup.connect(url).cookie("COOKIE_CURRENT_STORE","8").cookie("_pk_id.4.8c4a","b52bfe4ebeccec2d.1612664136.").cookie("COOKIE_CURRENT_PAGE","%2f").cookie("COOKIE_SHOP_PATH","Online").get().getElementsByTag(TAG_TYPE);
+    private void addCookies() {
+    	this.cookies.put("COOKIE_CURRENT_STORE","8");
+    	this.cookies.put("_pk_id.4.8c4a","b52bfe4ebeccec2d.1612664136.");
+    	this.cookies.put("COOKIE_CURRENT_PAGE","%2f");
+    	this.cookies.put("COOKIE_SHOP_PATH","Online");
     }
     
     private float getItemPrice(Elements el) {
-        boolean found = false;
         for(Element e : el) {
             String element = e.text();
             if(element.contains("$")) { //it checks for the first element with $ in it and records only that price
-                if(found==false) {
-                    found=true;
-                    float price = grabPrice(element);
-                    return price;
-                }
+            	float price = grabPrice(element);
+            	return price;
             }
         } 
         return 0;
-    }
-    
-    private String getRawPrice(Element e) {
-        Attributes a = e.attributes();
-        return a.get("content");
     }
     
     private float grabPrice(String element){ //removes the dollar sign and letters from an element
