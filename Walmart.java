@@ -37,4 +37,8 @@ public class Walmart extends WebScraper {
 		return 0;
 	}
 	
+	public int getPrice() {
+		return this.itemPrice;
+	}
+	
 }
