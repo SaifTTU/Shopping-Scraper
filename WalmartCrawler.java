@@ -16,6 +16,7 @@ public class WalmartCrawler extends WebScraper implements Crawler{
 	private int retrys;
 	
 	private ArrayList<String> urls;
+	private Walmart lowestPrice;
 	
 	/**
 	 * 
@@ -33,6 +34,12 @@ public class WalmartCrawler extends WebScraper implements Crawler{
 		for(String s : this.urls) {
 			if(i>=MAX_SEARCH_DEPTH) break;
 			Walmart w = new Walmart(s);
+			if(i == 0) {
+				this.lowestPrice = w;
+			}
+			if(w.getPrice() < lowestPrice.getPrice()) {
+				this.lowestPrice = w;
+			}
 			i++;
 		}
 	}
@@ -89,6 +96,10 @@ public class WalmartCrawler extends WebScraper implements Crawler{
 		}
 		
 		return false;
+	}
+	
+	public Walmart getLowestPrice() {
+		return this.lowestPrice();
 	}
 	
 }
