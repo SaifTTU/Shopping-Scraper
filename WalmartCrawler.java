@@ -98,7 +98,7 @@ public class WalmartCrawler extends WebScraper implements Crawler{
 		return false;
 	}
 	
-	public Walmart getLowestPrice() {
+	public Walmart getLowestPrice {
 		return this.lowestPrice();
 	}
 	
