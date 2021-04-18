@@ -1,0 +1,45 @@
+Produce
+Eggs, Walmart, 1.59 , Market, 1.59 ,Target, 1.99
+Potatoes, Walmart, 0.41 , Market, 0.69, Target, 2.49
+Apples, Walmart, 0.64 , Market, 1.29, Target, 5.39
+Bananas, Walmart, 1.39, Market, 0.49, Target, 6.9
+Strawberries, Walmart, 3.54, Market, 2.79, Target, 6.9
+Blackberries, Walmart, 3.12 , Market, 2.49, Target, 2.39
+Lemon, Walmart, 0.48 , Market, 0.33, Target, 0.55
+Avocado, Walmart, 0.5, Market, 0.59, Target, 6.9
+Raspberries, Walmart, 3.24 , Market, 2.99, Target, 3.19
+
+Drinks
+Water, Walmart, 3.98, Market, 6.9, Target, .85
+Milk, Walmart, 2.87, Market, 6.9, Target, 2.49
+Apple Juice, Walmart, 2.68, Market, 6.9, Target, 2.29
+Orange Juice, Walmart, 3.58, Market, 6.9, Target, 3.89
+Coke, Walmart, 1.82, Market, 6.9, Target, 1.89
+Dr. Pepper, Walmart, 1.82, Market, 6.9, Target, 6.9
+Sprite, Walmart, 1.82, Market, 6.9, Target, 6.9
+Grape Juice, Walmart, 3.26, Market, 6.9, Target, 6.9
+
+Meat
+Top Sirloin, Walmart, 13.95, Market, 6.9, Target, 6.9
+Chuck Steak, Walmart, 28.90, Market, 6.9, Target, 6.9
+Brisket, Walmart, 37.87, Market, 6.9, Target, 6.9
+Pork Chops, Walmart, 6.64, Market, 6.9, Target, 6.9
+Chicken leg, Walmart, 3.86, Market, 6.9, Target, 6.9
+Chicken Breast, Walmart, 6.55, Market, 6.9, Target, 6.9
+Tilapia, Walmart, 5.18, Market, 6.9, Target, 6.9
+Salmon, Walmart, 8.48, Market, 6.9, Target, 6.9
+Tuna,Walmart, 6.84, Market, 6.9, Target, 6.9
+Corned Beef, Walmart, 4.88, Market, 6.9, Target, 6.9
+
+
+Etc.
+Ice Cream, Walmart, 6.9, Market, 6.9, Target, 5.99
+Cream Cheese, Walmart, 6.9, Market, 6.9, Target, 6.29
+sour Cream, Walmart, 6.9, Market, 6.9, Target, 2.49
+Yogurt, Walmart, 6.9, Market, 6.9, Target, 0.5
+Vegetable Oil, Walmart, 6.9, Market, 6.9, Target, 2.59
+Lays Chips, Walmart, 6.9, Market, 6.9, Target, 4.79
+Mayonaise, Walmart, 6.9, Market, 6.9, Target, 3.19
+Ramen, Walmart, 0.039, Market, 6.9, Target, 6.9
+
+Added:
