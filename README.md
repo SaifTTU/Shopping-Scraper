@@ -25,8 +25,8 @@ This is an example of the Database Reader that was later added to store the valu
      
 \
 Heres a Photo of Our Database: \
-Each of us found one of the 4 Primary lists in this database. We then added the functionality of the growing database in the "Added" Section. \
-
+Each of us found one of the 4 Primary lists in this database. We then added the functionality of the growing database in the "Added" Section. 
+\
 Additionally, at this time, while we get our Target Scraper to work, in order to use Target, a maintainer is required, a second person, who will go into the database.txt, and manually enter in the prices for Target for comparison.
      
 <img src="images/Title Photo 4.png"
