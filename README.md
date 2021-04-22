@@ -1,6 +1,7 @@
 # Shopping-Scraper
 
-Hello! This is our Grocery Shopper App!
+Hello! This is our Grocery Shopper App! \
+To run this, simply open up Grocery_UI_App in your favorite IDE and hit run. 
 
 <img src="images/Title Photo.png"
      alt="Title Image 1"
