@@ -14,4 +14,5 @@
      
 <img src="images/Title Photo 4.png"
      alt="Picture of an Updating Databse.png"
-     style="float: left; margin-right: 10px;" />
+     style="float: left; margin-right: 10px;" 
+     width="200"/>
