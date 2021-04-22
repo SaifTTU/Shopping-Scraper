@@ -8,10 +8,10 @@
      alt="HTML Scrapers In Action"
      style="float: left; margin-right: 10px;" />
      
-<img src="images/Database Readers and Writers.png"
-     alt="Title Image 3"
+<img src="images/Title Photo 3.png"
+     alt="Database Readers and Writers"
      style="float: left; margin-right: 10px;" />
      
-<img src="images/Picture of an Updating Databse.png"
-     alt="Title Image 4"
+<img src="images/Title Photo 4"
+     alt="Picture of an Updating Databse.png"
      style="float: left; margin-right: 10px;" />
