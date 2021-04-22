@@ -2,6 +2,8 @@
 
 Hello! This is our Grocery Shopper App! \
 To run this, simply open up Grocery_UI_App in your favorite IDE and hit run. 
+Download this whole folder if you haven't, then run the JavaFX App to use our prototype.
+If you just want a demonstration of the scrappers, similarly open main.
 
 <img src="images/Title Photo.png"
      alt="Title Image 1"
