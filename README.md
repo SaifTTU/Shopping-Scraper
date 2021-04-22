@@ -35,7 +35,7 @@ Additionally, at this time, while we get our Target Scraper to work, in order to
      style="float: left; margin-right: 10px;" 
      width="300"/>
 
-As you can see, the more you use this app, the more items will get added, allowing you to have an ever expanding list of item prices.
+As you can see, the more you use this app, the better it will get. Each time you enter in an item, the software scrapes the internet for its prices. These prices will be recorded, allowing you to have an ever expanding list. Right now the size of the list is limited to an array of size 500.
 
 In the future, we'd hope to expand this by allowing past prices to be updated, and increases the number of stores.
 
