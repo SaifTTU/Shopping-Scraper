@@ -20,10 +20,11 @@ public class SearchGenerator {
 	}
 	
 	public static class MarketStreetSearch {
-		private static final String MARKET_STREET = "";
+		private static final String PREFIX = "https://www.marketstreetunited.com/rs/SearchProduct?searchkey=";
+		private static final String SUFFIX = "&typeSearch=SearchProducts";
 		
-		public String getURL(String item) {
-			return "";
+		public static String getURL(String item) {
+			return PREFIX+item+SUFFIX;
 		}
 	}
 
