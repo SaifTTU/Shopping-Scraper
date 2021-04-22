@@ -28,7 +28,8 @@ Heres a Photo of Our Database: \
 Each of us found one of the 4 Primary lists in this database. We then added the functionality of the growing database in the "Added" Section. 
 \
 \
-Additionally, at this time, while we get our Target Scraper to work, in order to use Target, a maintainer is required, a second person, who will go into the database.txt, and manually enter in the prices for Target for comparison. \
+Additionally, at this time, while we get our Target Scraper to work, in order to use Target, a maintainer is required, a second person, who will go into the database.txt, and manually enter in the prices for Target for comparison.
+\
      
 <img src="images/Title Photo 4.png"
      alt="Picture of an Updating Databse.png"
