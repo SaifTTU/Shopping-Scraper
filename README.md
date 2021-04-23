@@ -10,6 +10,12 @@ If you just want a demonstration of the scrappers, similarly open main.
      style="float: left; margin-right: 10px;"/>
      
 \
+Currently: You can add, remove, and reset list.
+
+You can also hit the compare buttom and our interface will automatically run the scrapper programs necessary and add the totals of each store, if the price was not already found in the database. 
+
+Combining these features really improves speed and versatility.
+
 Bellow you will find our HTML Scrapers In Action.
 
 <img src="images/Title Photo 2.png"
