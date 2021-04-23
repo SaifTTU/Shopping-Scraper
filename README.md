@@ -12,7 +12,11 @@ If you just want a demonstration of the scrappers, similarly open main.
 \
 Currently: You can add, remove, and reset list.
 
-You can also hit the compare buttom and our interface will automatically run the scrapper programs necessary and add the totals of each store, if the price was not already found in the database. 
+You can also hit the compare buttom and our interface will automatically run the scrapper programs necessary to find the prices online for MarketStreet and Walmart. 
+
+And it will add the totals of each store, if the price was not already found in the database. 
+
+In which case it will not run the scraper, and will instead add from the database. 
 
 Combining these features really improves speed and versatility.
 
